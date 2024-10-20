@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1A1A1A;
+}
+
+.container{
+    min-height: 69vh;
+    background-color: black;
+    color: white;
+    margin: 45px auto;
+    width: 70%;
+    background-image: url("Img/backImg.jpg");
+    background-size: cover;
+}
+.SpotifyLogo{
+    margin: 10px;
+}
+.container h1{
+    padding: 30px;
+}
+.navbar{
+    font-family: Ubuntu,sans-serif;
+    
+}
+.navbar ul{
+    background-color: black;   
+    color: white;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 60px;
+}
+.homeAbout{
+    padding: 10px 7px;
+}
+.navbar ul li img{
+    width: 52px;
+}
+.SpotifyName{
+    font-size:22px;
+    padding-right: 7px;
+}
+
+.bottom{
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-bottom: 0;
+    position: sticky;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+}
+#Range{
+    text-align: center;
+    width: 80vw;
+    cursor: pointer;
+   
+}
+.bottom .icons{
+    margin-top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    
+}
+.songinfo img{
+    max-width: 30px;   
+    transition: opacity 1s ease-in; 
+    
+}
+.songItem{
+    height: 50px;
+    background-color: black;
+    color: white;
+    width: 35vw;
+    display:flex;
+    
+    margin:12px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.timestamp{
+    padding-right: 20px;
+}
+
+.songItemPlay{
+    cursor: pointer;
+}
+
+.songItem img{
+    width: 60px;
+    margin: 0 15px;
+    border-radius: 34px;
+    
+}
+#gif{
+    opacity: 0;
+}
+
+@media (max-width: 960px) {
+
+    
+    .songItem {
+        width: 100%;
+   
+    }
+    .container{
+     
+        width: 100%;
+        margin: 0;
+
+    }
+    
+    .container h1{
+      
+        text-align: center;
+        font-size: 20px;
+    }
+    .SongName{
+        font-size: 15px;
+    }
+    #gif{
+        padding-top: 11px;
+        padding-right: 5px;
+    }
+    #masterSongName{
+        font-size: 7px;
+        padding-top: 20px;
+    }
+   
+}
+
